@@ -1,12 +1,19 @@
-<h1>Log In</h1>
-<%= form_tag sessions_path do %>
-  <div>
-    <%= label_tag "email" %><br/>
-    <%= text_field_tag "email" %>
-  </div>
-  <div>
-    <%= label_tag :password %><br/>
-    <%= password_field_tag :password %>
-  </div>
-  <div><%= submit_tag "Log In" %></div>
-<% end %>
+<html id="log-in">
+
+  <div class="brand">Rotten Mangoes</div>
+    <div class="log-in-form">
+      <h1>Log In</h1>
+      <%= form_tag sessions_path do %>
+        <div>
+          <%= label_tag "email" %><br/>
+          <%= text_field_tag "email" %>
+        </div>
+        <div>
+          <%= label_tag :password %><br/>
+          <%= password_field_tag :password %>
+        </div>
+        <div><%= submit_tag "Log In" %></div>
+
+        <% end %>
+    </div>
+</html>

@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+before_filter :restrict_access
+  
   def index
     @movies = Movie.all
   end
@@ -28,10 +30,11 @@ class MoviesController < ApplicationController
   def update
     @movie = Movie.find(params[:id])
 
-    id @movie.update_attributes(movie_params)
-    redirec_to movie_pat(@movie)
-  else 
-    render :edit
+    if @movie.update_attributes(movie_params)
+      redirect_to movie_path(@movie)
+    else
+      render :edit
+    end
   end
 
   def destroy

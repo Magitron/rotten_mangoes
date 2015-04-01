@@ -23,6 +23,7 @@ class Movie < ActiveRecord::Base
 
   def review_average
     reviews.sum(:rating_out_of_ten)/reviews.size
+  rescue ZeroDivisionError
   end
 
   protected

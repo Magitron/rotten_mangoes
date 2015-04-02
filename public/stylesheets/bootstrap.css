@@ -1089,7 +1089,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #585757;
   background-color: #e9eaeb;
 }
 input,
@@ -1292,6 +1292,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  padding-right: 40px;
 }
 .lead {
   margin-bottom: 20px;
@@ -3042,7 +3043,9 @@ fieldset[disabled] .btn {
 .btn-default {
   color: #e6414f;
   background-color: #ffffff;
-  border-color: #cccccc;
+  /* border-color: #e6414f; */
+  font-weight: 700;
+  /* border: 4px; */
 }
 .btn-default:hover,
 .btn-default:focus,

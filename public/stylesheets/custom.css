@@ -1,0 +1,33 @@
+h1,
+h2 {
+  font-weight: 700;
+}
+
+#log-in body { 
+  background: #E6414F no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.log-in-form {
+  display: table;
+  margin: 0 auto;
+}
+
+.brand {
+  color: #fff;
+  font-family: 'Chewy', cursive;
+  font-size: 100pt;
+  text-align: center;
+  margin-top: 6%;
+}
+
+p {
+  text-align: justify;
+}
+
+/*footer {
+  background-color: red;
+}*/
